@@ -1,4 +1,3 @@
-var scaleX=(window.innerHeight/722)*100;
 var scale=(window.outerHeight/824);
 const text=document.getElementsByClassName("textContainer");
 for(t of text){
@@ -13,7 +12,7 @@ for(b of box){
     b.style.width=scale*b.offsetWidth+"px";
     b.style.height=scale*b.offsetHeight+"px";
 }
-document.getElementById("answerGrid").style.fontSize=scaleX+"%";
+document.getElementById("typeAns").style.fontSize=scale*2+"em";
 var air={
     x: 0,
     y: 0,
