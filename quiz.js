@@ -13,7 +13,7 @@ for(b of box){
     b.style.width=scale*b.offsetWidth+"px";
     b.style.height=scale*b.offsetHeight+"px";
 }
-document.getElementById("answerGrid").style.fontSize=scale*2+"em";
+document.getElementById("answerGrid").style.fontSize=scaleX+"%";
 var air={
     x: 0,
     y: 0,
