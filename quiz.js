@@ -8,6 +8,11 @@ const text2=document.getElementsByClassName("pageText");
 for(t of text2){
     t.style.fontSize=scale*1.75+"em";
 }
+const box=document.getElementsByClassName("box");
+for(b of box){
+    b.style.width=scale*b.offsetWidth+"px";
+    b.style.height=scale*b.offsetHeight+"px";
+}
 document.getElementById("answerGrid").style.fontSize=scale*2+"em";
 var air={
     x: 0,
