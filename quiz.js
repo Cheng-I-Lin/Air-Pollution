@@ -1,3 +1,14 @@
+var scaleX=(window.innerHeight/722)*100;
+var scale=(window.outerHeight/824);
+const text=document.getElementsByClassName("textContainer");
+for(t of text){
+    t.style.fontSize=scale*1.5+"em";
+}
+const text2=document.getElementsByClassName("pageText");
+for(t of text2){
+    t.style.fontSize=scale*1.75+"em";
+}
+document.getElementById("answerGrid").style.fontSize=scale*2+"em";
 var air={
     x: 0,
     y: 0,
@@ -47,6 +58,10 @@ var actualQNum=0;
 var lose=0;
 var speed=1;
 var pollutant=document.getElementById("pollutant");
+
+grid.style.fontSize=scale*2+"em";
+pollutant.style.fontSize=scale*0.65+"em";
+
 pollutant.style.top="100%";
 pollutant.style.left=(Math.random()*70)+"%";
 if(qRandom){

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Air Pollution</title>
         <link rel="icon" type="image/png" href="airPollutionGamePic.png"/>
     </head>
@@ -18,7 +20,7 @@
             <button style="width: 90px; height: 35px; background-color: rgb(241, 183, 94);" onclick="submitAns();"><strong>Submit</strong></button>
         </div>
         <canvas id="gameCanvas" style="position: absolute;"></canvas>
-        <div id="intro" style="position: absolute; left: 0%; bottom: 0%; width: 100%; height: 100%; background-color: beige; font-size: 150%; text-align: center;">
+        <div class="textContainer" id="intro" style="position: absolute; left: 0%; bottom: 0%; width: 100%; height: 100%; background-color: beige; font-size: 150%; text-align: center;">
             <br><br><br><br><strong>Welcome to the Air Pollution Game</strong><br><br><br>
             This game is about solving the Air pollution in Taiwan caused by the non-environmentally-friendly industrial use.<br>
             The game would start off with dirty air pollutants rising up to the atmosphere, causing permanent air pollution.<br>
@@ -32,7 +34,7 @@
             <span style="opacity: 0;">hiiiiiiiiiiiiiiiiiiiiiiiiiii</span>
             <button style="width: 200px; height: 100px; background-color: rgb(241, 183, 94);" onclick="nextGame();"><strong>NEXT</strong></button>
         </div>
-        <div id="changeSettings" style="position: absolute; left: 0%; bottom: 100%; width: 100%; height: 100%; background-color: beige; font-size: 150%; text-align: center;">
+        <div class="textContainer" id="changeSettings" style="position: absolute; left: 0%; bottom: 100%; width: 100%; height: 100%; background-color: beige; font-size: 150%; text-align: center;">
             <br><br><strong>Total Number of Questions: </strong><span id="numOfQuestions"></span><br>
             <span style="position: absolute; left: 20%;"><strong>Questions</strong></span>
             <span style="position: absolute; left: 75%;"><strong>Answers</strong></span><br><br><br>
@@ -50,7 +52,7 @@
             <button style="width: 100px; height: 50px; background-color: rgb(241, 183, 94);" onclick="reviewPage();"><strong>Review Questions</strong></button>
         </div>
         <button id="settings" style="position: absolute; right: 0%; top: 0%; width: 90px; height: 35px; background-color: aquamarine;" onclick="openSettings();"><strong>Settings</strong></button>
-        <div id="losePage" style="position: absolute; left: 0%; bottom: 100%; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); color: white; text-align: center; font-size: 175%;">
+        <div class="pageText" id="losePage" style="position: absolute; left: 0%; bottom: 100%; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); color: white; text-align: center; font-size: 175%;">
             <br><br><br><br><br><br><br><strong>Oops! You lost!</strong><br>
             You missed three questions,<br>
             but I am sure you would get it next time!<br>
@@ -58,7 +60,7 @@
             <button id="restart" style="width: 200px; height: 100px; background-color: rgb(241, 183, 94);" onclick="restart();"><strong>Restart</strong></button>
             <button id="restart" style="width: 200px; height: 100px; background-color: rgb(241, 183, 94);" onclick="reviewPage();"><strong>Review</strong></button>
         </div>
-        <div id="winPage" style="position: absolute; left: 0%; bottom: 100%; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); color: white; text-align: center; font-size: 175%;">
+        <div class="pageText" id="winPage" style="position: absolute; left: 0%; bottom: 100%; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); color: white; text-align: center; font-size: 175%;">
             <br><br><br><br><br><br><br><strong>Congrats! You won!</strong><br>
             You answered all questions correctly,<br>
             but you can still keep practicing!<br>
@@ -66,7 +68,7 @@
             <button id="restart" style="width: 200px; height: 100px; background-color: rgb(241, 183, 94);" onclick="restart();"><strong>Restart</strong></button>
             <button id="restart" style="width: 200px; height: 100px; background-color: rgb(241, 183, 94);" onclick="reviewPage();"><strong>Review</strong></button>
         </div>
-        <div id="reviewVocab" style="position: absolute; left: 0%; bottom: 100%; width: 100%; height: 100%; background-color: beige; font-size: 150%; text-align: center;">
+        <div class="textContainer" id="reviewVocab" style="position: absolute; left: 0%; bottom: 100%; width: 100%; height: 100%; background-color: beige; font-size: 150%; text-align: center;">
             <button style="position: absolute; right: 0%; top: 0%; width: 90px; height: 35px; background-color: aquamarine;" onclick="reviewPage();"><strong>Go Back</strong></button>
             <br><h2>Review Questions & Answers</h2>
             <strong>Question #<span id="flashQNum"></span></strong>
