@@ -38,9 +38,9 @@
             <br><br><strong>Total Number of Questions: </strong><span id="numOfQuestions"></span><br>
             <span style="position: absolute; left: 20%;"><strong>Questions</strong></span>
             <span style="position: absolute; left: 75%;"><strong>Answers</strong></span><br><br><br>
-            Select a question: <input id="select" type="number" min="1" value="1" style="width: 100px; border: 2px black solid;"><span style="opacity: 0;">l</span><!--used to create space-->
-            <button style="width: 70px; height: 22px; background-color: rgb(241, 183, 94);" onclick="submitQuestionNumber();"><strong>Submit</strong></button><br><br><br>
-            Add/Minus a Question: <button id="addQuestion" onclick="addQ();"><strong>Add</strong></button><button id="minusQuestion" onclick="minusQ();"><strong>Minus</strong></button><br><br><br>
+            Select a question: <input class="box" id="select" type="number" min="1" value="1" style="width: 100px; border: 2px black solid;"><span style="opacity: 0;">l</span><!--used to create space-->
+            <button class="box" style="width: 70px; height: 22px; background-color: rgb(241, 183, 94);" onclick="submitQuestionNumber();"><strong>Submit</strong></button><br><br><br>
+            Add/Minus a Question: <button class="box" id="addQuestion" onclick="addQ();"><strong>Add</strong></button><button class="box" id="minusQuestion" onclick="minusQ();"><strong>Minus</strong></button><br><br><br>
             <strong>Air Pollutant Speed: </strong><span id="speedValue">1</span><br>
             <!--step in range can change the gap between numbers  color to use rgb(248, 157, 37)-->
             <input class="box" type="range" min="0" max="2" value="1" id="pollutantSpeed" style="width: 35%;"><br><br>
@@ -95,18 +95,18 @@
                 <div id="slideRight" style="width: 0; height: 0; position: absolute;right: 1%;top: 30%;border-top: 60px solid transparent;border-bottom: 60px solid transparent;border-left: 60px solid rgba(0, 0, 0, 0.2); transition: border-left 0.7s;"></div>
                 <div id="slideLeft" style="width: 0; height: 0; position: absolute;left: 1%;top: 30%;border-top: 60px solid transparent;border-bottom: 60px solid transparent;border-right: 60px solid rgba(0, 0, 0, 0.2);transition: border-right 0.7s;"></div>
             </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><!--good colors rgb(227, 255, 127), rgb(233, 84, 38), rgb(88, 223, 47)-->
-            <button style="width: 90px; height: 35px; background-color: rgb(227, 255, 127);" onclick="gotIt();"><strong><span style="color: green;">Got it!</span></strong></button> 
-            <button style="width: 120px; height: 35px; background-color: rgb(227, 255, 127);" onclick="needPractice();"><strong><span style="color: blue; opacity: 0.8;">Needs Practice</span></strong></button>
-            <button style="width: 90px; height: 35px; background-color: rgb(227, 255, 127);" onclick="incorrect();"><strong><span style="color: red;">Don't Know</span></strong></button>
+            <button class="box" style="width: 90px; height: 35px; background-color: rgb(227, 255, 127);" onclick="gotIt();"><strong><span style="color: green;">Got it!</span></strong></button> 
+            <button class="box" style="width: 120px; height: 35px; background-color: rgb(227, 255, 127);" onclick="needPractice();"><strong><span style="color: blue; opacity: 0.8;">Needs Practice</span></strong></button>
+            <button class="box" style="width: 90px; height: 35px; background-color: rgb(227, 255, 127);" onclick="incorrect();"><strong><span style="color: red;">Don't Know</span></strong></button>
             <span style="position: absolute; left: 7%; top: 40%;"><strong>Input URL here...</strong></span>
-            <input id="url" type="text" style="position: absolute; left: 4%; top: 45%; width: 250px; border: 4px black solid;">
+            <input class="box" id="url" type="text" style="position: absolute; left: 4%; top: 45%; width: 250px; border: 4px black solid;">
             <button class="box" id="submitURL" style="position: absolute; left: 9.5%; top: 50%; width: 90px; height: 35px; background-color: rgb(227, 255, 127);" onclick="imgURL();"><strong>Submit</strong></button>
             <button class="box" style="position: absolute; left: 5.5%; top: 58%; width: 100px; height: 50px; background-color: rgb(227, 255, 127);" onclick="closeImage();"><strong>Close Image</strong></button>
             <button class="box" style="position: absolute; left: 13%; top: 58%; width: 100px; height: 50px; background-color: rgb(227, 255, 127);" onclick="centerImage();"><strong>Center Image</strong></button>
             <div class="box" id="circleImg" style="position: absolute; width: 300px; height: 300px; right: 2.5%; top: 28.5%; background-color: white; border: 5px black solid; border-radius: 50%; overflow: hidden; transition: background-color 1s;">
                 <img id="img" style="position: absolute;">
-                <button id="maximize" style="position: absolute; width: 10%; bottom: 10%; left: 38%; background-color: rgba(167, 167, 167, 0.6); display: none;" onclick="enlarge();"><strong>+</strong></button>
-                <button id="minimize" style="position: absolute; width: 10%; bottom: 10%; left: 52%; background-color: rgba(167, 167, 167, 0.6); display: none;" onclick="reduce();"><strong>-</strong></button>
+                <button class="box" id="maximize" style="position: absolute; width: 10%; bottom: 10%; left: 38%; background-color: rgba(167, 167, 167, 0.6); display: none;" onclick="enlarge();"><strong>+</strong></button>
+                <button class="box" id="minimize" style="position: absolute; width: 10%; bottom: 10%; left: 52%; background-color: rgba(167, 167, 167, 0.6); display: none;" onclick="reduce();"><strong>-</strong></button>
             </div>
         </div>
         <style>
